@@ -1,0 +1,108 @@
+body{
+    background-color: #34533c;
+}
+.bord
+{
+    border-radius: 50% 50% 27% 73% / 62% 53% 47% 38%;
+}
+.text{
+    letter-spacing: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.hov {
+    font-size: 15px;
+    color: #e1e1e1;
+    /* font-family: inherit; */
+
+    cursor: pointer;
+    position: relative;
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: color;
+}
+
+.hov:focus,
+.hov:hover {
+    color: #fff;
+}
+
+.hov:focus:after,
+.hov:hover:after {
+    width: 100%;
+    left: 0%;
+}
+
+.hov:after {
+    content: "";
+    pointer-events: none;
+    bottom: -2px;
+    left: 50%;
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #fff;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: width, left;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.cards .red {
+    background-color: #205a34;
+}
+
+.cards .blue {
+    background-color: #858585;
+}
+
+.cards .green {
+    background-color: #3a3a3a;
+}
+
+.cards .cardz {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    height: 100px;
+    /* width: 250px; */
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    transition: 400ms;
+}
+
+.cards .cardz p.tip {
+    font-size: 1em;
+    font-weight: 700;
+}
+
+.cards .cardz p.second-text {
+    font-size: .7em;
+}
+
+.cards .cardz:hover {
+    transform: scale(1.1, 1.1);
+}
+
+.cards:hover>.cardz:not(:hover) {
+    filter: blur(10px);
+    transform: scale(0.9, 0.9);
+}
+.panel1{
+    background-color: #fffbe7;
+}
+.txtbut{
+    color: #ffc400;
+}
